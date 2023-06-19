@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <Label fx:id="LabelRayas" layoutX="52.0" layoutY="152.0" prefHeight="33.0" prefWidth="137.0" text="Hola Mundo">
+      <font>
+         <Font size="18.0" />
+      </font></Label>
+   <Label layoutX="52.0" layoutY="42.0" prefHeight="60.0" prefWidth="166.0" text="Ahorcado">
+      <font>
+         <Font size="36.0" />
+      </font>
+   </Label>
+   <TextField fx:id="CampoDeLetra" layoutX="52.0" layoutY="227.0" prefHeight="31.0" prefWidth="54.0" />
+   <Button fx:id="BotonLetra" defaultButton="true" layoutX="115.0" layoutY="227.0" mnemonicParsing="false" onAction="#letraInsertada" prefHeight="31.0" prefWidth="40.0" text="-&gt;" />
+   <Label layoutX="333.0" layoutY="258.0" prefHeight="21.0" prefWidth="126.0" text="Letras incorrectas:" />
+   <Label fx:id="LabelIncorrectas" layoutX="333.0" layoutY="289.0" prefHeight="21.0" prefWidth="177.0" />
+   <Circle fx:id="Cabeza" fill="WHITE" layoutX="415.0" layoutY="66.0" onMouseClicked="#headClick" opacity="0.0" radius="24.0" stroke="BLACK" strokeType="INSIDE" />
+   <Line fx:id="Tronco" endX="-0.5" endY="52.5858154296875" layoutX="416.0" layoutY="102.0" opacity="0.0" startY="-12.0" />
+   <Line fx:id="BrazoIzq" endX="-6.5" layoutX="422.0" layoutY="102.0" opacity="0.0" startX="-40.0" startY="43.0" />
+   <Line fx:id="BrazoDer" endX="21.0" endY="39.0" layoutX="434.0" layoutY="102.0" opacity="0.0" startX="-17.7928466796875" startY="-0.707122802734375" />
+   <Line fx:id="PiernaIzq" endX="-25.0" endY="54.0" layoutX="417.0" layoutY="163.0" opacity="0.0" startX="-1.5" startY="-7.0" />
+   <Line fx:id="PiernaDer" endX="28.0" endY="45.0" layoutX="417.0" layoutY="169.0" opacity="0.0" startX="-0.7928466796875" startY="-13.70709228515625" />
+   <Label fx:id="labelWinOrLose" layoutX="30.0" layoutY="291.0" opacity="0.0" text="¡Felicidades Ganaste!">
+      <font>
+         <Font size="27.0" />
+      </font>
+   </Label>
+   <Button fx:id="repeatButon" disable="true" layoutX="359.0" layoutY="330.0" mnemonicParsing="false" onAction="#repeatButonPress" opacity="0.0" text="¿Volver a intentar?" />
+   <Label fx:id="easterEgg" alignment="CENTER" layoutX="232.0" layoutY="14.0" prefHeight="21.0" prefWidth="366.0" textAlignment="CENTER" />
+   <Separator layoutX="315.0" layoutY="241.0" prefWidth="200.0" />
+</Pane>

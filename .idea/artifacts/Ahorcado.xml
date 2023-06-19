@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Ahorcado">
+    <output-path>$PROJECT_DIR$/out/artifacts/Ahorcado</output-path>
+    <root id="archive" name="Ahorcado.jar">
+      <element id="archive" name="Ahorcado.jar">
+        <element id="module-output" name="Ahorcado" />
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF" />
+    </root>
+  </artifact>
+</component>
